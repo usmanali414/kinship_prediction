@@ -14,7 +14,7 @@ model = load_model("vgg_face_modelv1.h5")  # Replace with the path to your Keras
 def read_and_preprocess_image(file):
     image = cv2.imdecode(np.fromstring(file.file.read(), np.uint8), cv2.IMREAD_COLOR)
     image = cv2.resize(image, (224, 224))  # Resize the image to match your model's input size
-    img = np.array(image).astype(np.float)
+    img = np.array(image)#.astype(np.float)
     image = preprocess_input(img, version=2)
     return image
 
