@@ -1,0 +1,12 @@
+uvicorn==0.26.0
+fastapi==0.109.0
+tensorflow==2.15.0
+numpy==1.26.3
+opencv-python==4.9.0.80
+keras==2.15.0
+git+https://github.com/yaledhlab/vggface.git
+Keras_applications==1.0.8
+python-multipart==0.0.6
+mtcnn==0.1.1
+scikit-learn==1.4.0
+deepface==0.0.82
